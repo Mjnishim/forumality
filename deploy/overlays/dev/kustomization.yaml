@@ -1,0 +1,16 @@
+configMapGenerator:
+- name: redis-config
+  files:
+  - redis.conf
+- name: postgres-config
+  envs:
+  - postgres.env
+
+namePrefix: forumal-dev-
+resources:
+  - ../../base
+  - postgres.yaml
+  - redis.yaml
+patches:
+  - path: dev-image.yaml
+  - path: dev-service.yaml
