@@ -1,10 +1,13 @@
-configMapGenerator:
+secretGenerator:
 - name: redis-config
   files:
   - redis.conf
 - name: postgres-config
   envs:
   - postgres.env
+- name: app-config
+  files:
+  - app.env
 
 namePrefix: forumal-dev-
 resources:

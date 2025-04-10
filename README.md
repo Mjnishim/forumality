@@ -7,7 +7,7 @@ Presently thinking of doing a forum-like; it's a solved problem in practical tec
 Aiming at:
 
 - Postgres (Replacing MySQL)
-- Prisma (Replacing Knex/Objection, TS-first)
+- Drizzle (Replacing Knex/Objection, TS-first)
 - NextJS (Replacing Vite/Webpack/react-router)
 - Zod
 - Minikube/Kustomize (replacing Helm)
